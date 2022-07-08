@@ -9,9 +9,13 @@
     "target": "ES5",
     "module": "es6",
     "allowJs": true,
-    "outDir": "./dist/",
+    "outDir": "dist",
     "noImplicitAny": true,
-    "moduleResolution": "Node"
+    "moduleResolution": "Node",
+    "baseUrl": "./",
+    "paths": {
+      "@/*":["src/*"]
+    }
   },
   "include": [
     "./src/.."
